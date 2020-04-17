@@ -1,0 +1,12 @@
+{
+    "name": "teamleader/reverse-coding-test",
+    "description": "A suboptimal implementation of the Teamleader coding test",
+    "type": "project",
+    "autoload": {
+        "classmap": ["src/", "tests/"]
+    },
+    "require": {
+        "slim/slim": "^3.10",
+        "phpunit/phpunit": "^7.1"
+    }
+}
