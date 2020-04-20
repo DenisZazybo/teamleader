@@ -1,7 +1,8 @@
-#Solution Overview
-###Remarks
+# Solution Overview
 
-####Application architecture:
+### Remarks
+
+#### Application architecture:
 The whole solution has no architectural structure, we can see just a set of files in the `src` directory.
 
 In fact, the controller level is missing. The logic that the controller level should handle is implemented in the `index.php` file.
@@ -15,7 +16,7 @@ The application can only generate a response with a status of 200, there is no e
 
 The service of building answers for the user is not implemented (the remark is not critical but affects the extensibility of the application).
 
-####Application implementation:
+#### Application implementation:
 Developer is no use dependency injection mechanism, service created like ```$discountService = new DiscountService();``` inside the route's handler.
  It is not a flexible solution, also, in my opinion, it will be good thinking about implementing a factory of services.
 
@@ -36,14 +37,14 @@ do not have optimal performance. Namely, I assume that the loop should be interr
 
 Unnecessary intermediate variables appear in places like ```$or = $item['quantity'];```.
 
-####Testing:
+#### Testing:
 Unit test coverage is insufficient and does not allow to properly control business logic.
 
-####Nice to have: 
+#### Nice to have: 
 1. If you use PHP7+ you should use Return Type Declarations and other type hints witch depends on your PHP version.
 2. More comments in the code, especially in calculation algorithms
 3. Instructions on how to launch the application.
 4. Integration with docker.
 
-####Conclusion: 
+#### Conclusion: 
 Unsatisfactory
