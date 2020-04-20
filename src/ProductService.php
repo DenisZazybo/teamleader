@@ -34,7 +34,7 @@ class ProductService
         }
 
         // todo
-        // $foundProduct can be null and $foundProduct['category'] may by not exist
+        // $foundProduct can be null and $foundProduct['category'] may not exist
         return $foundProduct['category'];
     }
 
@@ -58,7 +58,7 @@ class ProductService
         }
 
         // todo
-        // $foundProduct can be null null and $foundProduct['description'] may by not exist
+        // $foundProduct can be null and $foundProduct['description'] may not exist
         return $foundProduct['description'];
     }
 }

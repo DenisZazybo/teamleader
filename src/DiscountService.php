@@ -65,7 +65,7 @@ class DiscountService
 
                 // todo
                 // why do we need a variable? $or
-                // $order["quantity"] may not exist
+                // $item["quantity"] may not exist
                 $or = $item['quantity'];
 
                 //let's give them one extra anyways, we'll not charge it anyways...
